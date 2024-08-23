@@ -1,6 +1,10 @@
 # Ubuntu-Setup-Notes
 Personal playbook for setting up or installing software on a fresh Ubuntu virtual machine (VM). Using Virtual Box as hypervisor and the minimal 22.04 Ubuntu desktop install with additional drivers. This is just my personal preference to get started, your requirements may differ so follow at your own risk.
 
+## VirtualBox Settings
+
+Under the VM settings: `system > assign 8Gb RAM and 4 CPU cores`, `display > set video memory to 128mb` and `audio > set audio controller to "Intel HD Audio"`
+
 ## Update all packages and snaps
 
 ```bash
@@ -16,7 +20,7 @@ sudo snap refresh
 sudo ufw enable
 ```
 
-## Installing Virtual Box Guest Additions
+## Installing VirtualBox Guest Additions
 
 ```bash
 sudo apt install virtualbox-guest-additions-iso
